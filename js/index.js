@@ -1,13 +1,10 @@
-
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-    var currentScrollpos = window.pageYOffset;
-    if(prevScrollpos) > (currentScrollpos){
-      document.getElementById("navi").style.top="0";
-    }
-    else{
-      document.getElementsByClassName("navi").style.top="-100px";
-    }
-
-    prevScrollpos = currentScrollpos;
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navi").style.left = "0";
+  } else {
+    document.getElementById("navi").style.left = "-200px";
+  }
+  prevScrollpos = currentScrollPos;
 }
